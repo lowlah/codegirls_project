@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review  Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+  <h1>How do you feel about today's class?</h1>
+ <form id="myForm">
+   <section>  
+     <label for="topic">Today's Topic</label>
+     <input type="text" id="topic" ></input> 
+  </section>
+  <section>
+     <label for="date">Date of lesson</label>
+     <input type="date" id="date" ></input>
+  </section>
+  <section class="form-component">
+
+    <p class="label-radio">How comfortable are you with the material covered today? <span class="required">*</span></p>
+    <div class="radio-buttons" id="rad">
+        
+        <input type="radio" name="comfort-level" id="frown" value="frown"  >
+        <label for="frown" class="label-cell">
+            <i class="fa-regular fa-face-frown fa-2xl"></i><br>
+            <p class="radio-text">I need more practice</p>
+            
+        </label>
+        
+        <input type="radio" name="comfort-level" id="meh" value="meh" >    
+        <label for="meh" class="label-cell">
+            <i class="fa-regular fa-face-meh fa-2xl"></i>
+            <p class="radio-text">I am getting better at it</p>  
+        </label>
+        
+        <input type="radio" name="comfort-level"  id="smile" value="smile" />
+        <label for="smile" class="label-cell">
+            <i class="fa-regular fa-face-smile fa-2xl"></i>
+            <p class="radio-text">I can do it on my own</p>
+        </label>
+        <input type="radio" name="comfort-level" id="laugh-wink" value="laugh-wink" />
+        <label for="laugh-wink" class="label-cell">
+            <i class="fa-regular fa-face-laugh-wink fa-2xl"></i>
+            <p class="radio-text">I can explain to others</p>
+        </label>  
+    </div>
+    
+  </section>
+  <section>
+    <label for ="message"> One thing I did well today was....     </label></br>
+    <textarea required name="message" rows="5" cols="50">
+    </textarea>
+  </section>
+  <section>
+    <label>One thing I'm still having trouble with or one  question I still have is....</label>
+    <span class="required">*</span>
+    <br>
+
+    <textarea rows="5" cols="50" id="textq"></textarea>
+ </section>
+ <section>
+    <button type="submit" id="btn">Submit</button>
+ </section>
+</form>
+
+<script src="index.js"></script>    
+</body>
+</html>
